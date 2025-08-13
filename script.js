@@ -11,6 +11,7 @@
         errorMsg.textContent = "";
         alert("Welcome, " + user + "!");
         // Redirect or load launcher UI here
+       https://themrshadow-alt.github.io/ctrlaltXr/ctrlaltXr
       } else {
         errorMsg.textContent = "Invalid credentials. Try again.";
       }
