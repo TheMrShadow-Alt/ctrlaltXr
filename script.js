@@ -1,18 +1,25 @@
- const users = {
-      "admin": "shadowX",
-      "guest": "guest123"
-    };
+// script.js
 
-    function login() {
-      const user = document.getElementById("username").value;
-      const errorMsg = document.getElementById("errorMsg");
+// Define valid access keys and optional roles
+const accessKeys = {
+  "shadowX": "admin",
+  "guest123": "guest",
+  "ctrlaltX2025": "developer"
+};
 
-      if (users[user] && users[user]) {
-        errorMsg.textContent = "";
-        alert("Welcome, " + user + "!");
-        // Redirect or load launcher UI here
-       https://themrshadow-alt.github.io/ctrlaltXr/ctrlaltXr
-      } else {
-        errorMsg.textContent = "Invalid credentials. Try again.";
-      }
-    }
+// Login function
+function login() {
+  const inputKey = document.getElementById("username").value.trim();
+  const errorMsg = document.getElementById("errorMsg");
+
+  if (accessKeys[inputKey]) {
+    const role = accessKeys[inputKey];
+    errorMsg.textContent = "";
+
+    // Optional: Display role badge or redirect
+    alert(`Access granted. Role: ${role}`);
+    // Example: window.location.href = `dashboard.html?role=${role}`;
+  } else {
+    errorMsg.textContent = "Invalid access key.";
+  }
+}
