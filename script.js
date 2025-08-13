@@ -2,7 +2,7 @@
   const accessKeys = {
     "shadowX": "admin",
     "guest123": "guest",
-    "ctrlaltX2025": "developer"
+    "X9f7L2qPz8VbT1mKc4YwR6dN3sJgQeAoZxUvHbEtMnWyCpLdGkRuSjXvTfBnMzQy": "developer"
   };
 
   function login() {
@@ -12,7 +12,7 @@
     if (accessKeys[inputKey]) {
       const role = accessKeys[inputKey];
       errorMsg.textContent = "";
-      alert(`Access granted. Role: ${role}`);
+      alert(`Access granted.`);
     } else {
       errorMsg.textContent = "Invalid access key.";
     }
