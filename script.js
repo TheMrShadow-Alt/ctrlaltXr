@@ -18,7 +18,7 @@ function login() {
 
     // Optional: Display role badge or redirect
     alert(`Access granted. Role: ${role}`);
-    // Example: window.location.href = `dashboard.html?role=${role}`;
+    window.location.href = `ctrlaltXr.html`;
   } else {
     errorMsg.textContent = "Invalid access key.";
   }
