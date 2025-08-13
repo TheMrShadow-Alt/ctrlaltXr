@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname)));
 
 // Route to serve the main HTML file
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "ctrlaltXr.html"));
 });
 
 // Start the server
